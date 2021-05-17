@@ -51,14 +51,6 @@ public class KullaniciGiris implements KullaniciGirisInterface {
 
 	}
 
-	public int getRightOfEntry() {
-		return rightOfEntry;
-	}
-
-	public void setRightOfEntry(int rightOfEntry) {
-		this.rightOfEntry = rightOfEntry;
-	}
-
 	@Override
     public boolean Login(Kullanici kullanici) {
 		 

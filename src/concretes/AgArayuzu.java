@@ -12,7 +12,7 @@ public class AgArayuzu extends Sogutucu implements AgArayuzuInterface {
 
     Scanner scanner = new Scanner(System.in);
 
-    ObserverInterface goruntulenmeBirimi;
+    ObserverInterface goruntulenmeBirimi = new GoruntulenmeBirimi();
     ObserverInterface anormalDurumTespitBirimi = new AnormalDurumTespitBirimi();
 
     @Override

@@ -18,11 +18,6 @@ public class KullaniciGiris implements KullaniciGirisInterface {
 	ArrayList<String> accessLevels = new ArrayList<>();
 	ArrayList<String> publishers = new ArrayList<>();
 
-	String userName = null;
-	String password = null;
-	String accessLevel = null;
-	String publisher = null;
-
 	int rightOfEntry = 3;
 
 	KullaniciGiris() {
@@ -34,16 +29,10 @@ public class KullaniciGiris implements KullaniciGirisInterface {
 
 		try {
 			while (resultSet.next()) {
-				userName = resultSet.getString("userName");
-				password = resultSet.getString("password");
-				accessLevel = resultSet.getString("accessLevel");
-				publisher = resultSet.getString("publisher");
-
 				userNames.add(userName);
 				passwords.add(password);
 				accessLevels.add(accessLevel);
 				publishers.add(publisher);
-				
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();

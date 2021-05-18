@@ -8,7 +8,7 @@ public class DataBase {
 
     static void connect() {
         try {
-            connection = DriverManager.getConnection(url, "postgres", "rafetkanepe345");
+            connection = DriverManager.getConnection(url, "postgres", "1234");
         } catch (SQLException e) {
             e.printStackTrace();
         }
